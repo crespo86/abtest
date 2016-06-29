@@ -1,3 +1,9 @@
+%%html
+<style>
+table {float:center}
+</style>
+
+
 # A/B test Final
 
 <p style="text-align: left;"> sanghyun lee</p>
