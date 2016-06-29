@@ -1,9 +1,3 @@
-%%html
-<style>
-table {float:center}
-</style>
-
-
 # A/B test Final
 
 <p style="text-align: left;"> sanghyun lee</p>
@@ -42,6 +36,10 @@ Using thie new process, Udacity want to reduce the number of frustrated students
 
 - My Evaluation Metrics can apply analytic estimate and not to do another empirical estimate, since Unit of Analysis of My Evaluation Metrics are both Number of Clicks which is same to Unit of diversion. 
 
+%%html
+<style>
+table {float:center}
+</style>
 
 |            | Gross conversion | Net Conversion|
 |:-----------|-----------------:|--------------:|
