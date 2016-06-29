@@ -38,11 +38,13 @@ Using thie new process, Udacity want to reduce the number of frustrated students
 
 <table style="align: center;"> 
 <code>
+
 |            | Gross conversion | Net Conversion|
 |:-----------|-----------------:|--------------:|
 | Probability | 0.20625 | 0.1093125 |
 | Std         | 0.4046 | 0.3120 |   
 | SE          | 0.0202 | 0.0156 |
+
 </code>
 </table>
 
