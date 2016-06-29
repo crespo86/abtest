@@ -41,6 +41,7 @@ Using thie new process, Udacity want to reduce the number of frustrated students
 | Probability | 0.20625 | 0.1093125 |
 | Std         | 0.4046 | 0.3120 |   
 | SE          | 0.0202 | 0.0156 |
+{: .text-center }
 
 - For caluate SE, I have to rescale the data. In given data, there are 40000 cookie per day and 3200 clicks per day. And I want to use 5000 cookie as my sample which is 400 clicks (calculated the ratio).
 - 40000 : 5000 = 3200 : x -> x = 400
