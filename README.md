@@ -36,7 +36,6 @@ Using thie new process, Udacity want to reduce the number of frustrated students
 
 - My Evaluation Metrics can apply analytic estimate and not to do another empirical estimate, since Unit of Analysis of My Evaluation Metrics are both Number of Clicks which is same to Unit of diversion. 
 
-<center>
 
 |            | Gross conversion | Net Conversion|
 |:-----------|-----------------:|--------------:|
@@ -44,7 +43,6 @@ Using thie new process, Udacity want to reduce the number of frustrated students
 | Std         | 0.4046 | 0.3120 |   
 | SE          | 0.0202 | 0.0156 |
 
-</center>
 
 - For caluate SE, I have to rescale the data. In given data, there are 40000 cookie per day and 3200 clicks per day. And I want to use 5000 cookie as my sample which is 400 clicks (calculated the ratio).
 - 40000 : 5000 = 3200 : x -> x = 400
