@@ -56,8 +56,7 @@ Using thie new process, Udacity want to reduce the number of frustrated students
 - Get appropriate Size
   - I used [this site](http://www.evanmiller.org/ab-testing/sample-size.html) to get appropriate sample size.
   - Given alpha is 0.05 and beta is 0.2
-  - I used Gross conversion and Net conversion, since only this two metrics are significantly related with pageviews.
-  - (they are divided by clicks and clicks are related with pageviews invariably.)
+  - I used Gross conversion and Net conversion, since only this two metrics are significantly related with pageviews. (they are divided by clicks and clicks are related with pageviews invariably.)
 
             | Gross conversion | Net Conversion 
 :-----------|-----------------:|--------------: 
