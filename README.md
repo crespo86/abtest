@@ -54,7 +54,19 @@ Using thie new process, Udacity want to reduce the number of frustrated students
   - The metrics are too related so Bonferroni correction can make this test too conservative.
 
 - Get appropriate Size
-  - I used (this site)[http://www.evanmiller.org/ab-testing/sample-size.html]
+  - I used [this site](http://www.evanmiller.org/ab-testing/sample-size.html) to get appropriate sample size.
+  - Given alpha is 0.05 and beta is 0.2
+  - I used Gross conversion and Net conversion, since only this two metrics are significantly related with pageviews.
+  - (they are divided by clicks and clicks are related with pageviews invariably.)
+
+            | Gross conversion | Net Conversion 
+:-----------|-----------------:|--------------: 
+ Baseline conversion rate | 0.20625 | 0.1093125 
+ Minimum Detectable Effect  | 0.01 | 0.0075 
+  Sample size          | 25,835 | 27,413 | 0.0549
+
+  - the maximum sample size is 27,413. However this is the size of click, so I have to trans this click count to pageviews ( divided by 0.08) so, the number of pageviews are 342662.5
+  - Last, for A/B test I need sample for A and B Both, So I make double. 0.5 is not a human so, I used 342663. Thus, The requied sample size is **685,326**.
 
 
 
