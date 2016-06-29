@@ -36,11 +36,11 @@ Using thie new process, Udacity want to reduce the number of frustrated students
 
 - My Evaluation Metrics can apply analytic estimate and not to do another empirical estimate, since Unit of Analysis of My Evaluation Metrics are both Number of Clicks which is same to Unit of diversion. 
 
-          |            | Gross conversion | Net Conversion|
-|:-----------|-----------------:|--------------:|
-| Probability | 0.20625 | 0.1093125 |
-| Std         | 0.4046 | 0.3120 |   
-| SE          | 0.0202 | 0.0156 |
+     |            | Gross conversion | Net Conversion|
+     |:-----------|-----------------:|--------------:|
+     | Probability | 0.20625 | 0.1093125 |
+     | Std         | 0.4046 | 0.3120 |   
+     | SE          | 0.0202 | 0.0156 |
 
 
 
