@@ -32,5 +32,20 @@ Using thie new process, Udacity want to reduce the number of frustrated students
   - **Net conversion** is ( Number of user-ids who paid / Number of clicks after 14days from free-trial ). For the first time, I thought there are two kinds of student in this test. first is regretful student and second is sufficient student. I thought this new process is only for refretful student, so I don't need to check Net conversion metric. However I cannot conviced there is **no impect for sufficient student**, which means this process can lead more sufficient student than before. Thus I took this metric too. (want to know this metric is increased significantly or not)
   - **Retention** is ( Number of user-ids who paid / Number of user-ids ). like Click-though-probablity, It totally related with Gross conversion and Net conversion (Numver of clicks is invariant metric). Thus I decide not to take this metric as an invariant metric.
   
+### Measuring Standard Deviation
+
+- My Evaluation Metrics can apply analytic estimate and not to do another empirical estimate, since Unit of Analysis of My Evaluation Metrics are both Number of Clicks which is same to Unit of diversion. 
+
+|            | Gross conversion | Net Conversion|
+|:-----------|-----------------:|--------------:|
+| Probability | 0.20625 | 0.1093125 |
+| Std         | 0.4046 | 0.3120 |   
+| SE          | 0.0202 | 0.0156 |
+
+
+
+
+
+
 
 
