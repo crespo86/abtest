@@ -62,7 +62,7 @@ Using thie new process, Udacity want to reduce the number of frustrated students
 :-----------|-----------------:|--------------: 
  Baseline conversion rate | 0.20625 | 0.1093125 
  Minimum Detectable Effect  | 0.01 | 0.0075 
-  Sample size          | 25,835 | 27,413 | 0.0549
+  Sample size          | 25,835 | 27,413 
 
   - the maximum sample size is 27,413. However this is the size of click, so I have to trans this click count to pageviews ( divided by 0.08) so, the number of pageviews are 342662.5
   - Last, for A/B test I need sample for A and B Both, So I make double. 0.5 is not a human so, I used 342663. Thus, The requied sample size is **685,326**.
@@ -74,6 +74,35 @@ Using thie new process, Udacity want to reduce the number of frustrated students
   - Actually It is a big risk. mathmatically, one day 660 click and 72 people payment using this click. it means about 1,200 people [72 * 28 * 61.2%] got some effect about this and the tuition is 247,219 dollors [assume 1 person spend 200 dollors a months].
   - However, I was in M&A field and in my opinion it was good time to try this test. First. MOOC is the increasing Market. which means, this is the period which can gather people and if this business is grow up, this number is not gonna be big anymore. Second, Company in increasing Market need reputation more than their revenue. Reputation can not only attract people but also make partnership and support of a government. MOOC business is good to invest from goverment side, since It can reduce education gap which goverment need. So I think the test like this is welcome in this period for udacity. Last, the worried side effect is just small. Actually I can make intuition that this process can make some studant happy. However the opposite way is not easily imagine. In this case Maybe the bad side (assumed) is decreasing number of people who enroll free trial but It is hard to relate this test process and assumed side effect. So this process can affect some student but I think It is rarely bad.
 
+## Experiment Analysis
+
+### Sanity Checks
+
+Before I analysis the test, I need to do sanity checks for my invariable metrics. 
+
+            | Number of cookies | Number of clicks 
+:-----------|-----------------:|--------------: 
+ cont | 345,543 | 28,378
+ exp  | 344,660 | 28,325
+ P      | 0.5 | 0.5
+ SE      | 0.0006 | 0.0021
+ M     | 0.0012 | 0.00412
+ Inner bound      | 0.4988 | 0.4959
+ outer bound      | 0.5012 | 0.5041
+ observe          | 0.5006 | 0.5005
+ 
+ - To calculate SE, I used p 0.5 (cuz I made amount of two sample even) and use _sqrt(P * (1-P)/(cont+exp))_.
+
+
+
+
+
+- 
+- 
+- 
+- 
+- 
+- , Number of cookies)
 
 
  
