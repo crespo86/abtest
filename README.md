@@ -110,3 +110,5 @@ Since I pass all sanity check, I can analysis my evaluation metrics.
 | m           | 0.0086  |        | m         | 0.023  |        | m           | 0.0067  |        | 
 | low         | -0.0291 |        | low       | 0.0081 |        | low         | -0.0116 |        | 
 | upper       | -0.012  |        | upper     | 0.0541 |        | upper       | 0.0019  |        | 
+| statistically | significant|   | stastically | significant|  | statistically | not significant| |
+|practically | significant|      | practically | not significant | | practically | not significant| |
