@@ -99,10 +99,8 @@ Before I analysis the test, I need to do sanity checks for my invariable metrics
 
 Since I pass all sanity check, I can analysis my evaluation metrics.
 
-|             |         |        |           |        |        |             |         |        | 
+|gross conversion | cont    | exp    | retention | cont   | exp    | net conversion| cont    | exp    | 
 |-------------|---------|--------|-----------|--------|--------|-------------|---------|--------| 
-| gross (e/c) |         |        | retention |        |        | gross (e/c) |         |        | 
-|             | cont    | exp    |           | cont   | exp    |             | cont    | exp    | 
 | enroll      | 3785    | 3423   | pay       | 2033   | 1945   | pay         | 2033    | 1945   | 
 | clicks      | 17293   | 17260  | enroll    | 3785   | 3423   | clicks      | 17293   | 17260  | 
 | e/c         | 0.2189  | 0.1983 | p/e       | 0.5371 | 0.5682 | p/c         | 0.1176  | 0.1127 | 
