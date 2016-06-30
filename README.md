@@ -95,5 +95,19 @@ Before I analysis the test, I need to do sanity checks for my invariable metrics
  - Observed value of Number of cookies is **0.5006** and located between inner bound (0.4988) and outer bound (0.5012) so It can be passed.
  - Observed value of Number of clicks is **0.5005** and located between inner bound (0.4959) and outer bound (0.5041) so It can be passed.
 
+### Result Analysis
 
- 
+Since I pass all sanity check, I can analysis my evaluation metrics.
+
+|          | gross conversion |         |   |          | retention |        |   |          | net conversion |         |
+|:--------:|------------------|---------|---|----------|-----------|--------|---|----------|----------------|---------|
+|          | cont             | exp     |   |          | cont      | exp    |   |          | cont           | exp     |
+| enroll   | 3785             | 3423    |   | pay      | 2033      | 1945   |   | pay      | 2033           | 1945    |
+| clicks   | 17293            | 17260   |   | enroll   | 3785      | 3423   |   | clicks   | 17293          | 17260   |
+| e/c      | 0.2189           | 0.1983  |   | p/e      | 0.5371    | 0.5682 |   | p/c      | 0.1176         | 0.1127  |
+| diff     |                  | -0.0206 |   | diff     |           | 0.0311 |   | diff     | 0              | -0.0049 |
+| p pooled |                  | 0.2086  |   | p pooled |           | 0.5519 |   | p pooled | 0              | 0.1151  |
+| SE       |                  | 0.0044  |   | SE       |           | 0.0117 |   | SE       | 0              | 0.0034  |
+| M        |                  | 0.0086  |   | M        |           | 0.023  |   | M        | 0              | 0.0067  |
+| low      |                  | -0.0291 |   | low      |           | 0.0081 |   | low      | 0              | -0.0116 |
+| upper    |                  | -0.012  |   | upper    |           | 0.0541 |   | upper    | 0              | 0.0019  |
