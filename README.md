@@ -16,6 +16,13 @@ Using thie new process, Udacity want to reduce the number of frustrated students
 
 ## Experiment Design
 
+## Hypothesis
+Before move on, I need to set Hypothesis.
+
+H0 (Hypothesis Null) : The new process has no effect to change number of frustrated students who left the free trial because they didn't have enough time
+
+H1 (Alternative Hypothesis) : The new process has effect to change number of frustrated students who left the free trial because they didn't have enough time
+
 ### Metric Choice
 
 - Invariant metrics (Number of clicks, Number of cookies)
