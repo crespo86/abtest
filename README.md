@@ -27,14 +27,14 @@ Using thie new process, Udacity want to reduce the number of frustrated students
 
 - Evaluation Metrics (Gross conversion, Net conversion, retention)
   - Other 4 metrics are can be changed by the experiment. I choose some metrics which are significantly related to this test's subject.
-  - **Number of user-ids"** is the count of user who start free-trial. For me, this metric is not lead any intuition alone. I don't want to use this alone. 
-  - **Gross conversion** is ( Number of user-ids / Number of clicks after 14days from free-trial ). According to the hypothesis, the process lead some studant not to take free-trial and it means it might reduce Numver of user-ids. Therefore I want to see this metric gonna be significantly reduce or not. 
+  - **Number of user-ids"** is the count of user who start free-trial. For me, this metric is not lead any intuition alone. I don't want to use this alone.
+  - **Gross conversion** is ( Number of user-ids / Number of clicks after 14days from free-trial ). According to the hypothesis, the process lead some studant not to take free-trial and it means it might reduce Numver of user-ids. Therefore I want to see this metric gonna be significantly reduce or not.
   - **Net conversion** is ( Number of user-ids who paid / Number of clicks after 14days from free-trial ). For the first time, I thought there are two kinds of student in this test. first is regretful student and second is sufficient student. I thought this new process is only for refretful student, so I don't need to check Net conversion metric. However I cannot conviced there is **no impect for sufficient student**, which means this process can lead more sufficient student than before. Thus I took this metric too. (want to know this metric is increased significantly or not)
   - **Retention** is ( Number of user-ids who paid / Number of user-ids ). It related with Gross conversion and Net conversion (Number of clicks is invariant metric). Thus I decide to take this metric as an invariant metric.
-  
+
 ### Measuring Standard Deviation
 
-- My Evaluation Metrics can apply analytic estimate and not to do another empirical estimate, since Unit of Analysis of My Evaluation Metrics are both Number of Clicks which is same to Unit of diversion. 
+- My Evaluation Metrics can apply analytic estimate and not to do another empirical estimate, since Unit of Analysis of My Evaluation Metrics are both Number of Clicks which is same to Unit of diversion.
 
             | Gross conversion | Net Conversion | Retention
 :-----------|-----------------:|--------------:|--------------:  
@@ -58,11 +58,11 @@ Using thie new process, Udacity want to reduce the number of frustrated students
   - Given alpha is 0.05 and beta is 0.2
   - I used Gross conversion and Net conversion, since only this two metrics are significantly related with pageviews. (they are divided by clicks and clicks are related with pageviews invariably.)
 
-            | Gross conversion | Net Conversion 
-:-----------|-----------------:|--------------: 
- Baseline conversion rate | 0.20625 | 0.1093125 
- Minimum Detectable Effect  | 0.01 | 0.0075 
-  Sample size          | 25,835 | 27,413 
+            | Gross conversion | Net Conversion
+:-----------|-----------------:|--------------:
+ Baseline conversion rate | 0.20625 | 0.1093125
+ Minimum Detectable Effect  | 0.01 | 0.0075
+  Sample size          | 25,835 | 27,413
 
   - the maximum sample size is 27,413. However this is the size of click, so I have to trans this click count to pageviews ( divided by 0.08) so, the number of pageviews are 342662.5
   - Last, for A/B test I need sample for A and B Both, So I make double. 0.5 is not a human so, I used 342663. Thus, The requied sample size is **685,326**.
@@ -78,10 +78,10 @@ Using thie new process, Udacity want to reduce the number of frustrated students
 
 ### Sanity Checks
 
-Before I analysis the test, I need to do sanity checks for my invariable metrics. 
+Before I analysis the test, I need to do sanity checks for my invariable metrics.
 
-            | Number of cookies | Number of clicks 
-:-----------|-----------------:|--------------: 
+            | Number of cookies | Number of clicks
+:-----------|-----------------:|--------------:
  cont | 345,543 | 28,378
  exp  | 344,660 | 28,325
  P      | 0.5 | 0.5
@@ -90,7 +90,7 @@ Before I analysis the test, I need to do sanity checks for my invariable metrics
  Inner bound      | 0.4988 | 0.4959
  outer bound      | 0.5012 | 0.5041
  observe          | 0.5006 | 0.5005
- 
+
  - To calculate SE, I used p 0.5 (cuz I made amount of two sample even) and use _sqrt(P * (1-P)/(cont+exp))_.
  - Observed value of Number of cookies is **0.5006** and located between inner bound (0.4988) and outer bound (0.5012) so It can be passed.
  - Observed value of Number of clicks is **0.5005** and located between inner bound (0.4959) and outer bound (0.5041) so It can be passed.
@@ -99,16 +99,54 @@ Before I analysis the test, I need to do sanity checks for my invariable metrics
 
 Since I pass all sanity check, I can analysis my evaluation metrics.
 
-|gross conversion | cont    | exp    | retention | cont   | exp    | net conversion| cont    | exp    | 
-|-------------|---------|--------|-----------|--------|--------|-------------|---------|--------| 
-| enroll      | 3785    | 3423   | pay       | 2033   | 1945   | pay         | 2033    | 1945   | 
-| clicks      | 17293   | 17260  | enroll    | 3785   | 3423   | clicks      | 17293   | 17260  | 
-| e/c         | 0.2189  | 0.1983 | p/e       | 0.5371 | 0.5682 | p/c         | 0.1176  | 0.1127 | 
-| diff        | -0.0206 |        | diff      | 0.0311 |        | diff        | -0.0049 |        | 
-| p pooled    | 0.2086  |        | p pooled  | 0.5519 |        | p pooled    | 0.1151  |        | 
-| se          | 0.0044  |        | se        | 0.0117 |        | se          | 0.0034  |        | 
-| m           | 0.0086  |        | m         | 0.023  |        | m           | 0.0067  |        | 
-| low         | -0.0291 |        | low       | 0.0081 |        | low         | -0.0116 |        | 
-| upper       | -0.012  |        | upper     | 0.0541 |        | upper       | 0.0019  |        | 
+|gross conversion | cont    | exp    | retention | cont   | exp    | net conversion| cont    | exp    |
+|-------------|---------|--------|-----------|--------|--------|-------------|---------|--------|
+| enroll      | 3785    | 3423   | pay       | 2033   | 1945   | pay         | 2033    | 1945   |
+| clicks      | 17293   | 17260  | enroll    | 3785   | 3423   | clicks      | 17293   | 17260  |
+| e/c         | 0.2189  | 0.1983 | p/e       | 0.5371 | 0.5682 | p/c         | 0.1176  | 0.1127 |
+| diff        | -0.0206 |        | diff      | 0.0311 |        | diff        | -0.0049 |        |
+| p pooled    | 0.2086  |        | p pooled  | 0.5519 |        | p pooled    | 0.1151  |        |
+| se          | 0.0044  |        | se        | 0.0117 |        | se          | 0.0034  |        |
+| m           | 0.0086  |        | m         | 0.023  |        | m           | 0.0067  |        |
+| low         | -0.0291 |        | low       | 0.0081 |        | low         | -0.0116 |        |
+| upper       | -0.012  |        | upper     | 0.0541 |        | upper       | 0.0019  |        |
 | statistically | significant|   | stastically | significant|  | statistically | not significant| |
 |practically | significant|      | practically | not significant | | practically | not significant| |
+
+I tried sign test using [this site](http://graphpad.com/quickcalcs/binomial1.cfm).
+
+|           | Gross conversion | Retention | Net conversion |
+|-----------|----------------:|----------:|----------------:|
+| successes |               19 |        13 |             10 |
+| trial     |               23 |        23 |             23 |
+| P         |              0.5 |       0.5 |            0.5 |
+| P-value   |           0.0026 |    0.0026 |         0.0026 |
+|statistically| significant| not significant| not significant|
+
+- In effect size test, Gross conversion metric's diff is -0.0206 which is in low and upper bound. Also it is not in +- 0.01, so it is statistically and practically significant. retention metric's diff is 0.0311 which is in low and upper bound. However it is in += 0.01, si it is statistically significant and practically not significant. Net conversion's upper and low bound incloud 0, and it is in +- 0.0075, so it is both not significant.
+
+- In sign test, just Gross conversion got under 0.05 P-value, So, It is statistically significant.
+
+- just Retention, the two test result is different. Actually I don't know why they are different. However I can say why retention metric is not significant in sign test. I calculate each Gross conversion diff and net conversion diff's variance. and Net conversion's variance is more than Gross conversion. Retention is really related with both two metric, so even if gross conversion is highly significant, this metric get more effect from Net conversion.
+
+### Recommendation
+
+- I recommend udacity take the process.
+- In Gross conversion, we can get significant result. which means we reject the Null of hypothesis. The process will reduce the students who frustrated after enroll free-trial.
+- In other two metric, we cannot get significant result. However it has a good meaning. these metrics are related the student who are ready to pay. As I mentioned before, I think this is not fit to this project's hypothesis. However It show **there is no side effect for student who are ready to pay**. (if this score get negative effect, I have to think about adapt the new prosess more.)
+
+### Follow up experiment
+
+- I'm just think about Udacity global market. (Because I am the one!)
+- English is good because most of computer programming knowledge is from english document so I have to study this language for my progress.
+- However when I used forum, there is a problem. **Udacity teachers work in american time! (maybe)** Whenever I submit my assignment or question on the forum, it have to responsed at least tomorrow. Usually 2 am or 3 am. 
+- I don't know How many people in Asia (normally in China) using Udacity. However If it is large or getting larger of udacity want to make asia student more, it is good to make some teacher for asian time!
+- I want to make hypothesis like this "using teacher for asian time make more asian student", but it take longlong time which means it is not good subject for A/B test. So I changed it "using teacher for asian time make more participation rate of asian student." As I mentioned, MOOC is getting huge in over the world, and increasing company need good reputation as much as revenue.
+
+- hypothesis : using teacher for asian time make more asian participation rate.
+- H-null : using teacher for asian time cannot make more asian participantion rate.
+- Unit of diversion : user-ids of asian region (it can addressed by IP, or credit card information and so on.)
+- invariant metrics : number of user-ids of asian region. number of class
+- variant metrics : number of submit(test), number of user-ids who used forum, number of discussion.
+
+Plz do this test!! and make teacher for asian timeline ^^
