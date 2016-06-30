@@ -92,17 +92,8 @@ Before I analysis the test, I need to do sanity checks for my invariable metrics
  observe          | 0.5006 | 0.5005
  
  - To calculate SE, I used p 0.5 (cuz I made amount of two sample even) and use _sqrt(P * (1-P)/(cont+exp))_.
-
-
-
-
-
-- 
-- 
-- 
-- 
-- 
-- , Number of cookies)
+ - Observed value of Number of cookies is **0.5006** and located between inner bound (0.4988) and outer bound (0.5012) so It can be passed.
+ - Observed value of Number of clicks is **0.5005** and located between inner bound (0.4959) and outer bound (0.5041) so It can be passed.
 
 
  
