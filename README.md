@@ -63,10 +63,7 @@ In this test, I expect that first H0 is reject and second H0 is not reject in th
 
 ### Sizing
 
-- I don't use Bonferroni correction because..
-  - This A/B test need take twice both. (reject first H0, and leave Second H0)
-  - Bonferroni correction is used if the test need any rejected metrics when multifple metric used. 
-  - In this test, even if first H0 is rejected, we cannot use this when second H0 is decreased. So We don't have to use Bonferroni correction.
+- I don't use Bonferroni correction.
 
 - Get appropriate Size
   - I used [this site](http://www.evanmiller.org/ab-testing/sample-size.html) to get appropriate sample size.
@@ -142,6 +139,11 @@ I tried sign test using [this site](http://graphpad.com/quickcalcs/binomial1.cfm
 - In sign test, just Gross conversion got under 0.05 P-value, So, It is statistically significant.
 
 - just Retention, the two test result is different. Actually I don't know why they are different. However I can say why retention metric is not significant in sign test. I calculate each Gross conversion diff and net conversion diff's variance. and Net conversion's variance is more than Gross conversion. Retention is really related with both two metric, so even if gross conversion is highly significant, this metric get more effect from Net conversion.
+
+- I don't use Bonferroni correction because..
+  - This A/B test need take twice both. (reject first H0, and leave Second H0)
+  - Bonferroni correction is used if the test need any rejected metrics when multifple metric used. 
+  - In this test, even if first H0 is rejected, we cannot use this when second H0 is decreased. So We don't have to use Bonferroni correction.
 
 ### Recommendation
 
