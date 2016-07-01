@@ -153,9 +153,9 @@ Therefore we would better additional test or if we have no time, bring this to b
 
 ### Follow up experiment
 
-I think one reason of early cancelization is try the class which is not fit to the studant. Normally the student who click "Free Trial" is Newbie of Udacity, expecially newbie of **computer Science** like I was. I think if Udacity make a class map, student can find appropriate class more easily.
+I think one reason of early cancelization is try the class which is not fit to the studant. Normally the student who click "Free Trial" is Newbie of Udacity, expecially newbie of **computer Science** like I was. I think if Udacity make a class map, student can find appropriate class more easily. The map will be posted  every class description pages. each map has the study process and where they are located.
 
-The process map can be drew by the class requirements. The first introduce page of every class have requirement class or knowledge. Using this Student can get whare they are and what they need.
+The study process map can be drew by the class requirements. The first introduce page of every class have requirement class or knowledge. Using this Student can get whare they are and what they need.
 
 The example of this process map is SAP process map
 
@@ -163,4 +163,14 @@ The example of this process map is SAP process map
 
 I know udacity nanodegree is All-in-one program However In my case, even if I did not tried python class first, I got frustrated about this class. The requirement is posted the nanodegree however psychologically, when people faced 'Free' item, they usually didn't act logically. Actually I don't have the data(which number of clicks inappropriate class for themselveS) so I cannot conviced right now. So I need to take A/B test.
 
+The Hypothesis:
+ - H0 : The study process map cannot reduce the number of early cancellations.
+ - H1 : The study process map can reduce the numer of early cancellation.
 
+Unit of diversion: **number of user-ids** because every people who are enrolled have their id. people can take different class  at the same time but I will set the size to one class named **Data analysis Nanodegree**. (I got really frusted when faced P0 and P1 in this class! I don't have actual data but I am sure that this class has high early cancelation!)
+
+Invariant metrics: Number of User-ids of users who enrolled Data analysis Nanodegree. I need to use this metric as a Unit of Analysis of My evaluation Metrics. 
+
+Evaluation Metrics: Cancel rate (Number of User-ids of users who canceled Data analysis Nanodegree by Number of User-ids of users who enrolled Data analysis Nanodegree). It is expected to decreased.
+
+Risk : It is just give more information. It cannot make huge problems using Udacity homepage. And Alot doesn't need more personal data from student, so ethically not risk.
