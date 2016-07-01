@@ -65,7 +65,7 @@ In this test, I expect that first H0 is reject and second H0 is not reject in th
 
 - I don't use Bonferroni correction because..
   - This A/B test need take twice both. (reject first H0, and leave Second H0)
-  - Bonferroni correction is used if the test need any rejected metrics when multifple metric used.
+  - Bonferroni correction is used if the test need any rejected metrics when multifple metric used. 
   - In this test, even if first H0 is rejected, we cannot use this when second H0 is decreased. So We don't have to use Bonferroni correction.
 
 - Get appropriate Size
@@ -82,12 +82,11 @@ In this test, I expect that first H0 is reject and second H0 is not reject in th
   - the maximum sample size is 27,413. However this is the size of click, so I have to trans this click count to pageviews ( divided by 0.08) so, the number of pageviews are 342662.5
   - Last, for A/B test I need sample for A and B Both, So I make double. 0.5 is not a human so, I used 342663. Thus, The requied sample size is **685,326**.
 
-  - Before I choose the fraction of experiment by day, I want to choose the duration Because In my experience about company, most of time the duration of report is already made by board members, which means it is really hard to change.
-  - I set duration 28days which is 4 weeks. The total sample which I need is 685,326 and Udacity get just 40,000 cookie a day.
-  - In this duration, I had to collect 24,476 sample per day, which is 61.2% of daily cookies.
-  - I think the 61.2% is risky or not. I think this test is not that much risky.
-  - Actually It is a big risk. mathmatically, one day 660 click and 72 people payment using this click. it means about 1,200 people [72 * 28 * 61.2%] got some effect about this and the tuition is 247,219 dollors [assume 1 person spend 200 dollors a months].
-  - However, I was in M&A field and in my opinion it was good time to try this test. First. MOOC is the increasing Market. which means, this is the period which can gather people and if this business is grow up, this number is not gonna be big anymore. Second, Company in increasing Market need reputation more than their revenue. Reputation can not only attract people but also make partnership and support of a government. MOOC business is good to invest from goverment side, since It can reduce education gap which goverment need. So I think the test like this is welcome in this period for udacity. Last, the worried side effect is just small. Actually I can make intuition that this process can make some studant happy. However the opposite way is not easily imagine. In this case Maybe the bad side (assumed) is decreasing number of people who enroll free trial but It is hard to relate this test process and assumed side effect. So this process can affect some student but I think It is rarely bad.
+  - This is not a high risk. 
+  - For company side, this can effect just some of **new students**, so It cannot be a huge part of revenue.
+  - This is not an implement of new program. It is just direction(link), So It cannot make huge problems using Udacity homepage.
+  - This new process dosen't have some ethically important data of student. So It cannot make huge problems of students personal infomation.
+  - However, It exactly have some possible problems, so I do not use this all 100%.
 
 ## Experiment Analysis
 
