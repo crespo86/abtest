@@ -23,6 +23,14 @@ H0 (Hypothesis Null) : The new process has no effect to change number of frustra
 
 H1 (Alternative Hypothesis) : The new process has effect to change number of frustrated students who left the free trial because they didn't have enough time
 
+Also, I need another Hypothesis. In upper image udacity want to put a new process on the "click free trial", which means it can effect to the number of students who are not frustrated through "free-trial".
+
+H0 (Hypothesis Null) : The new process has no effect to change numver of not frustrated students who happy with free trial.
+
+H1 (Alternative Hypothesis) : The new process has effect to change numver of not frustrated students who happy with free trial.
+
+In this test, I expect that first H0 is reject and second H0 is not reject in the same time.
+
 ### Metric Choice
 
 - Invariant metrics (Number of clicks, Number of cookies)
