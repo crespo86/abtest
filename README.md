@@ -145,7 +145,7 @@ I tried sign test using [this site](http://graphpad.com/quickcalcs/binomial1.cfm
 
 ### Recommendation
 
-
+<img src="https://raw.githubusercontent.com/crespo86/abtest/master/result.png" width="800">
 
 
 
