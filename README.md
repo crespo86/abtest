@@ -159,7 +159,7 @@ The process map can be drew by the class requirements. The first introduce page 
 
 The example of this process map is SAP process map
 
-<img src="http://www.zarantech.com/images/SAP-HANA-1-0-SP9-Training-RoadMap.png" width="800">
+<img src="https://blogs.saphana.com/wp-content/uploads/2013/11/exam.jpg" width="800">
 
 Actually I don't have the data(which number of clicks inappropriate class for themselveS) so I cannot conviced right now. So I need to take A/B test.
 
