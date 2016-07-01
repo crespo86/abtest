@@ -153,16 +153,14 @@ Therefore we would better additional test or if we have no time, bring this to b
 
 ### Follow up experiment
 
-- I'm just think about Udacity global market. (Because I am the one!)
-- English is good because most of computer programming knowledge is from english document so I have to study this language for my progress.
-- However when I used forum, there is a problem. **Udacity teachers work in american time! (maybe)** Whenever I submit my assignment or question on the forum, it have to responsed at least tomorrow. Usually 2 am or 3 am. 
-- I don't know How many people in Asia (normally in China) using Udacity. However If it is large or getting larger of udacity want to make asia student more, it is good to make some teacher for asian time!
-- I want to make hypothesis like this "using teacher for asian time make more asian student", but it take longlong time which means it is not good subject for A/B test. So I changed it "using teacher for asian time make more participation rate of asian student." As I mentioned, MOOC is getting huge in over the world, and increasing company need good reputation as much as revenue.
+I think one reason of early cancelization is try the class which is not fit to the studant. Normally the student who click "Free Trial" is Newbie of Udacity, expecially newbie of **computer Science** like I was. I think if Udacity make a class map, student can find appropriate class more easily.
 
-- hypothesis : using teacher for asian time make more asian participation rate.
-- H-null : using teacher for asian time cannot make more asian participantion rate.
-- Unit of diversion : user-ids of asian region (it can addressed by IP, or credit card information and so on.)
-- invariant metrics : number of user-ids of asian region. number of class
-- variant metrics : number of submit(test), number of user-ids who used forum, number of discussion.
+The process map can be drew by the class requirements. The first introduce page of every class have requirement class or knowledge. Using this Student can get whare they are and what they need.
 
-Plz do this test!! and make teacher for asian timeline ^^
+The example of this process map is SAP process map
+
+<img src="http://www.zarantech.com/images/SAP-HANA-1-0-SP9-Training-RoadMap.png" width="800">
+
+Actually I don't have the data(which number of clicks inappropriate class for themselveS) so I cannot conviced right now. So I need to take A/B test.
+
+
