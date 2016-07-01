@@ -110,35 +110,33 @@ Before I analysis the test, I need to do sanity checks for my invariable metrics
 
 Since I pass all sanity check, I can analysis my evaluation metrics.
 
-|gross conversion | cont    | exp    | retention | cont   | exp    | net conversion| cont    | exp    |
-|-------------|---------|--------|-----------|--------|--------|-------------|---------|--------|
-| enroll      | 3785    | 3423   | pay       | 2033   | 1945   | pay         | 2033    | 1945   |
-| clicks      | 17293   | 17260  | enroll    | 3785   | 3423   | clicks      | 17293   | 17260  |
-| e/c         | 0.2189  | 0.1983 | p/e       | 0.5371 | 0.5682 | p/c         | 0.1176  | 0.1127 |
-| diff        | -0.0206 |        | diff      | 0.0311 |        | diff        | -0.0049 |        |
-| p pooled    | 0.2086  |        | p pooled  | 0.5519 |        | p pooled    | 0.1151  |        |
-| se          | 0.0044  |        | se        | 0.0117 |        | se          | 0.0034  |        |
-| m           | 0.0086  |        | m         | 0.023  |        | m           | 0.0067  |        |
-| low         | -0.0291 |        | low       | 0.0081 |        | low         | -0.0116 |        |
-| upper       | -0.012  |        | upper     | 0.0541 |        | upper       | 0.0019  |        |
-| statistically | significant|   | stastically | significant|  | statistically | not significant| |
-|practically | significant|      | practically | not significant | | practically | not significant| |
+|gross conversion | cont    | exp    | net conversion| cont    | exp    |
+|-------------|---------|--------|-------------|---------|--------|
+| enroll      | 3785    | 3423   |  pay         | 2033    | 1945   |
+| clicks      | 17293   | 17260  |  clicks      | 17293   | 17260  |
+| e/c         | 0.2189  | 0.1983 |  p/c         | 0.1176  | 0.1127 |
+| diff        | -0.0206 |        |  diff        | -0.0049 |        |
+| p pooled    | 0.2086  |        | p pooled    | 0.1151  |        |
+| se          | 0.0044  |        | se          | 0.0034  |        |
+| m           | 0.0086  |        | m           | 0.0067  |        |
+| low         | -0.0291 |        | low         | -0.0116 |        |
+| upper       | -0.012  |        | upper       | 0.0019  |        |
+| statistically | significant|   | statistically | not significant| |
+|practically | significant|      | practically | not significant| |
 
 I tried sign test using [this site](http://graphpad.com/quickcalcs/binomial1.cfm).
 
-|           | Gross conversion | Retention | Net conversion |
-|-----------|----------------:|----------:|----------------:|
-| successes |               19 |        13 |             10 |
-| trial     |               23 |        23 |             23 |
-| P         |              0.5 |       0.5 |            0.5 |
-| P-value   |           0.0026 |    0.0026 |         0.0026 |
-|statistically| significant| not significant| not significant|
+|           | Gross conversion |  Net conversion |
+|-----------|----------------:|----------------:|
+| successes |               19 |             10 |
+| trial     |               23 |              23 |
+| P         |              0.5 |             0.5 |
+| P-value   |           0.0026 |          0.0026 |
+|statistically| significant| not significant|
 
-- In effect size test, Gross conversion metric's diff is -0.0206 which is in low and upper bound. Also it is not in +- 0.01, so it is statistically and practically significant. retention metric's diff is 0.0311 which is in low and upper bound. However it is in += 0.01, si it is statistically significant and practically not significant. Net conversion's upper and low bound incloud 0, and it is in +- 0.0075, so it is both not significant.
+- In effect size test, Gross conversion metric's diff is -0.0206 which is in low and upper bound. Also it is not in +- 0.01, so it is statistically and practically significant. Net conversion's upper and low bound incloud 0, and it is in +- 0.0075, so it is both not significant.
 
 - In sign test, just Gross conversion got under 0.05 P-value, So, It is statistically significant.
-
-- just Retention, the two test result is different. Actually I don't know why they are different. However I can say why retention metric is not significant in sign test. I calculate each Gross conversion diff and net conversion diff's variance. and Net conversion's variance is more than Gross conversion. Retention is really related with both two metric, so even if gross conversion is highly significant, this metric get more effect from Net conversion.
 
 - I don't use Bonferroni correction because..
   - This A/B test need take twice both. (reject first H0, and leave Second H0)
