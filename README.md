@@ -161,6 +161,6 @@ The example of this process map is SAP process map
 
 <img src="https://blogs.saphana.com/wp-content/uploads/2013/11/exam.jpg" width="800">
 
-Actually I don't have the data(which number of clicks inappropriate class for themselveS) so I cannot conviced right now. So I need to take A/B test.
+I know udacity nanodegree is All-in-one program However In my case, even if I did not tried python class first, I got frustrated about this class. The requirement is posted the nanodegree however psychologically, when people faced 'Free' item, they usually didn't act logically. Actually I don't have the data(which number of clicks inappropriate class for themselveS) so I cannot conviced right now. So I need to take A/B test.
 
 
