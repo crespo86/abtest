@@ -64,8 +64,9 @@ In this test, I expect that first H0 is reject and second H0 is not reject in th
 ### Sizing
 
 - I don't use Bonferroni correction because..
-  - I just have 2 metrics which is not that many.
-  - The metrics are too related so Bonferroni correction can make this test too conservative.
+  - This A/B test need take twice both. (reject first H0, and leave Second H0)
+  - Bonferroni correction is used if the test need any rejected metrics when multifple metric used.
+  - In this test, even if first H0 is rejected, we cannot use this when second H0 is decreased. So We don't have to use Bonferroni correction.
 
 - Get appropriate Size
   - I used [this site](http://www.evanmiller.org/ab-testing/sample-size.html) to get appropriate sample size.
