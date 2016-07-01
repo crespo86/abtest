@@ -145,9 +145,9 @@ I tried sign test using [this site](http://graphpad.com/quickcalcs/binomial1.cfm
 
 ### Recommendation
 
-- I recommend udacity take the process.
-- In Gross conversion, we can get significant result. which means we reject the Null of hypothesis. The process will reduce the students who frustrated after enroll free-trial.
-- In other two metric, we cannot get significant result. However it has a good meaning. these metrics are related the student who are ready to pay. As I mentioned before, I think this is not fit to this project's hypothesis. However It show **there is no side effect for student who are ready to pay**. (if this score get negative effect, I have to think about adapt the new prosess more.)
+
+
+
 
 ### Follow up experiment
 
