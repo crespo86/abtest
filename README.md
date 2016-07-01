@@ -51,16 +51,15 @@ In this test, I expect that first H0 is reject and second H0 is not reject in th
 
 - My Evaluation Metrics can apply analytic estimate and not to do another empirical estimate, since Unit of Analysis of My Evaluation Metrics are both Number of Clicks which is same to Unit of diversion.
 
-            | Gross conversion | Net Conversion | Retention
-:-----------|-----------------:|--------------:|--------------:  
- Probability | 0.20625 | 0.1093125 | 0.53
- Std         | 0.4046 | 0.3120 | 0.4991
- SE          | 0.0202 | 0.0156 | 0.0549
+            | Gross conversion | Net Conversion
+:-----------|-----------------:|--------------: 
+ Probability | 0.20625 | 0.1093125
+ Std         | 0.4046 | 0.3120 
+ SE          | 0.0202 | 0.0156 
 
 - For calculate Gross convention and Net Conversioin's SE, I have to rescale the data. In given data, there are 40000 cookie per day and 3200 clicks per day. And I want to use 5000 cookie as my sample which is 400 clicks (calculated the ratio).
 - 40000 : 5000 = 3200 : x -> x = 400
-- for calculate Retention's SE, I rescaled as I did before. So I used 82.5 as number of enrollments.
-- 40000 : 5000 = 660 : y -> y = 82.5
+
 
 ### Sizing
 
