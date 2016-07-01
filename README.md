@@ -147,7 +147,9 @@ I tried sign test using [this site](http://graphpad.com/quickcalcs/binomial1.cfm
 
 <img src="https://raw.githubusercontent.com/crespo86/abtest/master/result1.png" width="800">
 
+Gross conversion is statistically and practically significant, so it recect first hypothesis as we expected. However Net conversion is not only stistically and practically significant and the confidence interval cover 0, so I need to take more test additional test for this.
 
+Therefore we would better additional test or if we have no time, bring this to board member of udicity and explain the result and make decision.
 
 ### Follow up experiment
 
